@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Control</title>
+    <link rel="icon" href="assets/icon.png">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="manifest" href="manifest.json">
+    <viewport content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>PIBA - Animation Controls</h1>
+
+    <div class="controls">
+        <button id="blackout" style="background-color: black; color: white;">Blackout</button>
+        
+        <button id="logo" style="background-color: #007bff; color: white;">Logo</button>
+        
+        <button id="blink" style="background-color: #28a745; color: white;">Blink</button>
+        <div id="color-controls">
+            <div id="color-controls-1">
+                <label for="color1">Color 1:</label>
+                <input type="color" id="color1" value="#000000">
+            </div>
+
+            <div id="color-controls-2">
+                <label for="color2">Color 2:</label>
+                <input type="color" id="color2" value="#ffffff">
+            </div>
+
+            <div id="color-controls-3">
+                <label id="blink-time-text" for="blink-time">Blink time (seg):</label>
+                <input type="range" id="blink-time" value="1" min="0.1" max="2" step="0.1">
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/firebase-config.js"></script>
+    <script type="module" src="js/admin.js"></script>
+</body>
+</html>
